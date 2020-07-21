@@ -1,5 +1,7 @@
 package club.banyuan;
 
+import java.util.Arrays;
+
 public class Practice {
     public static void main(String[] args) {
 
@@ -30,6 +32,9 @@ public class Practice {
         b[0] = new String[]{"你", "我", "他"};
         b[1] = new String[]{"金", "木", "水", "火", "土"};
         b[2] = new String[]{"天", "地"};
+        System.out.println(Arrays.toString(b[0]));
+        System.out.println(Arrays.toString(b[1]));
+        System.out.println(Arrays.toString(b[2]));
 
 /**请思考验证当float类型变量中保存了超出了int所能表示的范围的数字，将这个变量强制转换为int数据类型后，int数据类型变量中保存的值是多少**/
 
