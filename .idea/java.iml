@@ -6,6 +6,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/7.20/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/7.21/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/01.ClassDef/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/03.Modifier/Que/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/02.DogAndCat/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/04.Company/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/05.Fraction/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/06.Timer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/7.22/07.VideoStore/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
