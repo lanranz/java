@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/7.22/01.ClassDef/01.ClassDef.iml" filepath="$PROJECT_DIR$/7.22/01.ClassDef/01.ClassDef.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.22/02.DogAndCat/02.DogAndCat.iml" filepath="$PROJECT_DIR$/7.22/02.DogAndCat/02.DogAndCat.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/03.Modifier/03.Modifier.iml" filepath="$PROJECT_DIR$/7.22/03.Modifier/03.Modifier.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/04.Company/04.Company.iml" filepath="$PROJECT_DIR$/7.22/04.Company/04.Company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.22/05.Fraction/05.Fraction.iml" filepath="$PROJECT_DIR$/7.22/05.Fraction/05.Fraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.22/06.Timer/06.Timer.iml" filepath="$PROJECT_DIR$/7.22/06.Timer/06.Timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.22/07.VideoStore/07.VideoStore.iml" filepath="$PROJECT_DIR$/7.22/07.VideoStore/07.VideoStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.20/7.20.iml" filepath="$PROJECT_DIR$/7.20/7.20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.21/7.21.iml" filepath="$PROJECT_DIR$/7.21/7.21.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
     </modules>
   </component>
