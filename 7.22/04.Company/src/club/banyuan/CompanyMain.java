@@ -1,6 +1,6 @@
 package club.banyuan;
 
-public class Main {
+public class CompanyMain {
     public static void main(String[] args) {
         Company company = new Company();
         Employee employee1 = new Employee();

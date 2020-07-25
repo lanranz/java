@@ -1,10 +1,15 @@
 package club.banyuan;
 
 class Time{
-    int hour;
-    int minute;
-    int second;
+    private int hour;
+    private int minute;
+    private int second;
 
+    public Time(int hour, int minute, int second) {
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+    }
 
     void setTime(int aHour, int aMinute, int aSecond) {
         this.hour = aHour;
@@ -53,10 +58,19 @@ class Time{
                 hour++;
                 if (hour == 24) {
                     hour = 0;
-                    System.out.println("时间到了第二天。");
+                    System.out.println("第二天");
                 }
             }
         }
+    }
+
+
+    public static void main(String[] args) {
+        Time time = new Time(23,59,59);
+        time.nextSecond();
+        System.out.println(time.timeToString());
+        time.setTime(12,0,0);
+        System.out.println(time.timeToString());
     }
 }
 
