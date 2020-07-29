@@ -15,7 +15,7 @@ public class Student {
         this.name = name;
     }
 
-    public void study(){
-        System.out.println(name+"开始学习");
+    public void study() {
+        System.out.println(name + "开始学习");
     }
 }

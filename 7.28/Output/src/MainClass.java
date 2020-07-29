@@ -1,27 +1,32 @@
-class ClassOne {
+class ClassOne
+{
+    static int i, j = 191919;
 
-    static int i = 111;
-
-    int j = 222;
-
-    {
-        i = i++ - ++j;
-    }
+//    {
+//        --i;
+//    }
+//
+//    {
+//        j++;
+//    }
 }
 
-class ClassTwo extends ClassOne {
+public class MainClass extends ClassOne
+{
+//    static
+//    {
+//        i++;
+//    }
+//
+//    static
+//    {
+//        --j;
+//    }
 
+    public static void main(String[] args)
     {
-        i = -113;
-        j = i-- + --j;
-    }
-}
+        System.out.println(i);
 
-class Main {
-
-    public static void main(String args[]) {
-        ClassTwo clsTwo = new ClassTwo();
-        System.out.println(clsTwo.i);
-        System.out.println(clsTwo.j);
+        System.out.println(j);
     }
 }

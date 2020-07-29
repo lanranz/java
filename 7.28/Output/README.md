@@ -367,10 +367,15 @@ public class MainClass
 ```
 1212
 1212
+
 1212
---------
+
+-------
+
 2121
 1212
+
+
 
 
 #### 13. 
@@ -753,12 +758,12 @@ class X
 
 	public X()
 	{
-		i = i++ + i-- - i;
+		i = i++ + i-- - i;//101010+101011-101010
 	}
 
 	static int staticMethod(int i)
 	{
-		return --i;
+		return --i;//101010
 	}
 }
 
@@ -786,11 +791,11 @@ class ClassOne
      static int i, j = 191919;
  
      {
-         --i;
+         --i;//没执行
      }
  
      {
-         j++;
+         j++;//没执行
      }
 }
  
@@ -948,7 +953,7 @@ class ClassTwo extends ClassOne {
 
   {
     i = -113;
-    j = i-- + --j;
+    j = i-- + --j;//-113+222
   }
 }
 
