@@ -3,17 +3,26 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/7.22/01.ClassDef/01.ClassDef.iml" filepath="$PROJECT_DIR$/7.22/01.ClassDef/01.ClassDef.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.24/01.Output/01.Output.iml" filepath="$PROJECT_DIR$/7.24/01.Output/01.Output.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/02.DogAndCat/02.DogAndCat.iml" filepath="$PROJECT_DIR$/7.22/02.DogAndCat/02.DogAndCat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.24/02.Person/02.Person.iml" filepath="$PROJECT_DIR$/7.24/02.Person/02.Person.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.22/03.Modifier/03.Modifier.iml" filepath="$PROJECT_DIR$/7.22/03.Modifier/03.Modifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.24/03.Product/03.Product.iml" filepath="$PROJECT_DIR$/7.24/03.Product/03.Product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.22/04.Company/04.Company.iml" filepath="$PROJECT_DIR$/7.22/04.Company/04.Company.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/05.Fraction/05.Fraction.iml" filepath="$PROJECT_DIR$/7.22/05.Fraction/05.Fraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/06.Timer/06.Timer.iml" filepath="$PROJECT_DIR$/7.22/06.Timer/06.Timer.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/07.VideoStore/07.VideoStore.iml" filepath="$PROJECT_DIR$/7.22/07.VideoStore/07.VideoStore.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.20/7.20.iml" filepath="$PROJECT_DIR$/7.20/7.20.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.21/7.21.iml" filepath="$PROJECT_DIR$/7.21/7.21.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.24/7.24.iml" filepath="$PROJECT_DIR$/7.24/7.24.iml" />
-      <module fileurl="file://$PROJECT_DIR$/7.28/7.28.iml" filepath="$PROJECT_DIR$/7.28/7.28.iml" />
-      <module fileurl="file://$PROJECT_DIR$/7.29/7.29.iml" filepath="$PROJECT_DIR$/7.29/7.29.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.30/7.30.iml" filepath="$PROJECT_DIR$/7.30/7.30.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/08.Circle/Ans/Ans.iml" filepath="$PROJECT_DIR$/7.22/08.Circle/Ans/Ans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.29/Cake/Cake.iml" filepath="$PROJECT_DIR$/7.29/Cake/Cake.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.29/Firm/Firm.iml" filepath="$PROJECT_DIR$/7.29/Firm/Firm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.28/Output/Output.iml" filepath="$PROJECT_DIR$/7.28/Output/Output.iml" />
       <module fileurl="file://$PROJECT_DIR$/7.22/08.Circle/Que/Que.iml" filepath="$PROJECT_DIR$/7.22/08.Circle/Que/Que.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.29/Shape/Shape.iml" filepath="$PROJECT_DIR$/7.29/Shape/Shape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7.28/Student/Student.iml" filepath="$PROJECT_DIR$/7.28/Student/Student.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
     </modules>
   </component>

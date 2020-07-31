@@ -44,7 +44,7 @@ class Main {
 }
 ```
 Derived::show() called
-
+静态方法不会重写
 #### 3.
 ```
 class Base {

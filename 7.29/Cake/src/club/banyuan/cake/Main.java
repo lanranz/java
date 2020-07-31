@@ -27,25 +27,24 @@ public class Main {
         int readyMadeCakeQuantity = 0;
         for (int i = 0; i < cakes.length; i = i + 2) {
             readyMadeCakePrice += cakes[i].calPrice();
-            ReadyMadeCake readyMadeCake = (ReadyMadeCake) cakes[i];
-            readyMadeCakeQuantity += readyMadeCake.getQuantity();
+            readyMadeCakeQuantity += ((ReadyMadeCake) cakes[i]).getQuantity();
         }
-        System.out.println("ReadyMadeCake蛋糕的总价"+readyMadeCakePrice);
-        System.out.println("ReadyMadeCake蛋糕的总数"+readyMadeCakeQuantity);
+        System.out.println("ReadyMadeCake蛋糕的总价" + readyMadeCakePrice);
+        System.out.println("ReadyMadeCake蛋糕的总数" + readyMadeCakeQuantity);
 
         double MaxPrice = cakes[0].calPrice();
         int indexOf = 0;
         for (int i = 1; i < cakes.length; i++) {
-            if(cakes[i].calPrice()>MaxPrice){
+            if (cakes[i].calPrice() > MaxPrice) {
                 MaxPrice = cakes[i].calPrice();
                 indexOf = i;
             }
         }
         System.out.println(cakes[indexOf].toString());
 
-        if(indexOf%2==0){
+        if (indexOf % 2 == 0) {
             System.out.println("按数量卖");
-        }else{
+        } else {
             System.out.println("按斤卖");
         }
 

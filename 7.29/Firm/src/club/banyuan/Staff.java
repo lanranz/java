@@ -10,7 +10,7 @@ public class Staff {
 
   //设置工作人员名单
   public Staff() {
-    staffList = new StaffMember[6];
+    staffList = new StaffMember[8];
     staffList[0] = new Executive("张三", "玄武", "13312345678", "123-45-6789", 2423.07);
     staffList[1] = new Employee("李四", "仙林", "13888888888", "987-65-4321", 1246.15);
     staffList[2] = new Employee("王五", "鼓楼", "13777777777", "010-20-3040", 1169.23);

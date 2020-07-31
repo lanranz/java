@@ -1,6 +1,6 @@
 package club.banyuan.area;
 
-import java.awt.*;
+
 
 public class Main {
 

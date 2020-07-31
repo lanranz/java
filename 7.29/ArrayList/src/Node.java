@@ -8,6 +8,10 @@ public class Node {
   public Node() {
   }
 
+  public Node(Object value) {
+    this.value = value;
+  }
+
   public Node(Node prev, Node next, Object value) {
     this.prev = prev;
     this.next = next;
