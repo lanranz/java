@@ -1,6 +1,5 @@
 package club.bayuan.queue;
 
-import java.util.Arrays;
 
 public class ArrayQueue implements Queue {
     public Object[] value = new Object[10];
@@ -9,7 +8,7 @@ public class ArrayQueue implements Queue {
     @Override
     public void add(Object o) {
         if (count == value.length) {
-            Object[] newArr = new Object[value.length * 2];
+            Object[] newArr = new Object[value.length + 1];
             System.arraycopy(value, 0, newArr, 0, count);
             value = newArr;
         }

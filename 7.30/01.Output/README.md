@@ -196,7 +196,7 @@ interface PQR extends ABC
 	public void methodTwo();
 }
 ```
-不能，因为接口子类中重写的方法必须有方法体
+
 
 #### 9.
 ```
