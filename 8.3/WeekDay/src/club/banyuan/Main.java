@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         WeekDay[] values = WeekDay.values();
         for (WeekDay value : values) {
-            value.isWeekDay();
+            value.isHoliday();
         }
 
         WeekDay sat = WeekDay.SATURDAY;
