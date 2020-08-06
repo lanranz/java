@@ -30,8 +30,19 @@ public class PointUtils {
    * 返回一个新点，新点的X值是所有给定点的X值的平均值，Y值是所有给定点的Y值的平均值。
    */
   public static Point centroid(List<Point> points) {
+    Iterator<Point> pointIterator = points.iterator();
+    int count = 0;
+    int x = 0;
+    int y = 0;
 
-    return null;
+
+    while (pointIterator.hasNext()) {
+      Point next = pointIterator.next();
+      x += next.getX();
+      y += next.getY();
+      count++;
+    }
+    return new Point(x / count, y / count);
   }
 
   public void test() {

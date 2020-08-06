@@ -1,5 +1,7 @@
 package club.banyuan;
 
+import java.util.Iterator;
+
 /**
  * 该代码说明了Pairs类的用法。
  */

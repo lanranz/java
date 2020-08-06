@@ -1,8 +1,13 @@
 package club.banyuan;
 
+
+import java.util.Iterator;
+
 public class Pairs<K, V> implements Iterable<Pair<K, V>> {
 
   /* 声明一对对象的固定大小的数组（最多10个元素） */
+  private Pairs<K,V>[] value = new Pairs[10];
+  private int count;
 
   /**
    * 创建一个集合，该集合将存储成对添加的项目。
@@ -17,6 +22,7 @@ public class Pairs<K, V> implements Iterable<Pair<K, V>> {
    * @param second The second object.
    */
   public boolean addPair(K first, V second) {
+
     return true;
   }
 
