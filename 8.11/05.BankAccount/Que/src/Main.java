@@ -3,7 +3,7 @@ public class Main {
   public static void main(String args[]) {
     Account a = new Account();
     a.setAccountNo(111);
-    a.setBalance(1000);
+    a.setBalance(2000);
     DepositThread t1;
     WithdrawThread t2;
     t1 = new DepositThread(a, 500);

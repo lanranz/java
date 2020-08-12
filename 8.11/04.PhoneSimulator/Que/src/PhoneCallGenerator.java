@@ -16,18 +16,21 @@ public class PhoneCallGenerator extends Thread {
     public void run() {
         Random random = new Random();
         // 生成20个电话
-        synchronized (phone){
+        synchronized (phone) {
             for (int i = 0; i < 20; i++) {
+
                 phone.startCall(getName(), String.valueOf(i));
-                int time = random.nextInt(3);
+                int time = random.nextInt(1000);
                 try {
-                    phone.join(time * 100);
+                    phone.join(time);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 phone.endCall(getName(), String.valueOf(i));
             }
+
         }
+
 
     }
 

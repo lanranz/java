@@ -28,7 +28,7 @@ public class Account {
      *
      * @param amount
      */
-    public void deposit(int amount) {
+    public synchronized void deposit(int amount) {
         balance = balance + amount;
         System.out.println("存入" + amount);
         displayBalance();
@@ -39,7 +39,7 @@ public class Account {
      *
      * @param amount
      */
-    public void withdraw(int amount) {
+    public synchronized void withdraw(int amount) {
         if (balance - amount < 0) {
             System.out.println("余额不足");
             return;

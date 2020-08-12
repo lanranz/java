@@ -42,7 +42,7 @@ public class CellularPhone extends Thread {
   /**
    * 显示手机正在等待做某事
    */
-  private void displayWaiting() {
+  private synchronized void displayWaiting() {
     display("<" + this.getName() + ">: Waiting...");
   }
 
