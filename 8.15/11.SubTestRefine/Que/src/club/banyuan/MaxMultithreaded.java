@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
-class MaxThread implements Callable {
+class MaxThread implements Callable<Double> {
 
   private int lo, hi;
   private int[] arr;
@@ -17,7 +17,7 @@ class MaxThread implements Callable {
   }
 
   @Override
-  public Object call() {
+  public Double call() {
     ans = Math.sin(arr[lo]);
     for (int i = lo; i < hi; i++) {
       double sin = Math.sin(arr[i]);
@@ -28,9 +28,7 @@ class MaxThread implements Callable {
     return ans;
   }
 
-//  public double getAns() {
-//    return ans;
-//  }
+
 }
 
 public class MaxMultithreaded {
@@ -48,10 +46,6 @@ public class MaxMultithreaded {
 
     // 创建并启动线程。
     ExecutorService threadPoolExecutor= Executors.newFixedThreadPool(numThreads);
-
-    for (int i = 0; i < numThreads; i++) {
-
-    }
 
     // 等待线程完成并计算它们的结果。
     List<Future<Double>> res=new ArrayList<>();

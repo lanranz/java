@@ -1,7 +1,14 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class CellularPhone extends Thread {
 
   private volatile boolean callInProgress = false;
   private volatile boolean keepGoing = true;
+  private Lock lock = new ReentrantLock();
+  private Queue<String> queue = new LinkedList<>();
 
   public CellularPhone(String name) {
     super(name);
@@ -23,6 +30,9 @@ public class CellularPhone extends Thread {
    * @param callDisplayMessage 呼叫正在进行时显示的消息
    */
   public boolean startCall(String name, String callDisplayMessage) {
+    if (!lock.tryLock()) {
+      return false;
+    }
     callInProgress = true;
     display("<" + name + ">: Call (" + callDisplayMessage + ") begins");
     return true;
@@ -72,11 +82,14 @@ public class CellularPhone extends Thread {
     }
   }
 
-  public void addMessage(String s) {
-
+  synchronized public void addMessage(String s) {
+    queue.offer(s);
   }
 
-  private void displayMessages(){
 
+  synchronized private void displayMessages() {
+    while (!queue.isEmpty()) {
+      System.out.println(queue.poll());
+    }
   }
 }

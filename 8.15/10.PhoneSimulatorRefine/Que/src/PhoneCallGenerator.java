@@ -16,17 +16,18 @@ public class PhoneCallGenerator extends Thread {
 
     // 生成20个电话
     for (int i = 0; i < 20; i++) {
-      synchronized (phone) {
-        // TODO 发起一个呼叫
-        phone.startCall(getName(), i + "");
-        // TODO 呼叫持续中，休眠随机生成的时间，
-        try {
+
+      try {
+        if(phone.startCall(getName(), i + "")){
           Thread.sleep(new Random().nextInt(1000));
-        } catch (InterruptedException e) {
-          e.printStackTrace();
+          phone.endCall(getName(), i + "");
+        }else {
+          System.out.println("<" + this.getName()
+                  + ">: Busy, call dropped");
+          Thread.sleep(new Random().nextInt(1000));
         }
-        // TODO 结束通话
-        phone.endCall(getName(), i + "");
+      } catch (InterruptedException e) {
+        e.printStackTrace();
       }
       Thread.yield();
     }
