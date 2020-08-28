@@ -33,8 +33,7 @@ public class TcpServer {
                 }
                 System.out.println("接收完成");
 
-                BufferedWriter writer = new BufferedWriter(
-                        new OutputStreamWriter(socket.getOutputStream()));
+                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
                 writer.write(lines + "");
                 writer.newLine();
                 writer.write(stringBuilder.toString());
@@ -46,11 +45,4 @@ public class TcpServer {
         }
     }
 
-    public static int parse(byte[] bytes) {
-        int rlt = 0;
-        for (int i = 0; i < bytes.length; i++) {
-            rlt |= ((int) bytes[i]) << 8 * (3 - i);
-        }
-        return rlt;
-    }
 }

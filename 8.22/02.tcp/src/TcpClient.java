@@ -14,7 +14,7 @@ public class TcpClient {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             try {
-                System.out.println("1.加密，2.解密");
+                System.out.println("1.加密，2.解密，0.退出");
                 String input = scanner.nextLine();
                 boolean isEncode;
                 switch (input) {
@@ -88,13 +88,5 @@ public class TcpClient {
             lines--;
         }
         System.out.println("接收完成");
-    }
-
-    public static byte[] parse(int target) {
-        byte[] bytes = new byte[4];
-        for (int i = 0; i < bytes.length; i++) {
-            bytes[i] = (byte) (target >> 8 * (3 - i));
-        }
-        return bytes;
     }
 }
