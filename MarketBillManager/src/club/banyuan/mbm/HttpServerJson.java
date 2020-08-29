@@ -150,6 +150,7 @@ public class HttpServerJson {
         User rlt = userService.getUser(user.getId());
         sendJsonResponse(outputStream, rlt);
       }
+      break;
     }
   }
 

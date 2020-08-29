@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ProviderService {
     private int idCount = 1;
@@ -84,6 +85,10 @@ public class ProviderService {
     }
 
     public List<Provider> getProviderList(Provider provider){
-        if (provider)
+        if (provider==null||provider.getName()==null||provider.getName().trim().length()==0){
+            return getProviderList();
+        }
+        return providerList.stream().filter(t -> t.getName().contains(provider.getName()))
+                .collect(Collectors.toList());
     }
 }
